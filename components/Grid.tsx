@@ -1,82 +1,19 @@
 import React from "react";
-import { BentoGrid } from "./ui/BentoGrid";
+import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { gridItems } from "@/data";
 
 const Grid = () => {
   return (
     <section id="about">
       <BentoGrid>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          libero facilis aliquid voluptas, porro soluta optio nobis nemo unde
-          odit illum sapiente dolorum dolor totam explicabo cupiditate, delectus
-          sit sint.
-        </h1>
+        {gridItems.map((item) => (
+          <BentoGridItem
+            id={item.id}
+            key={item.id}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
       </BentoGrid>
     </section>
   );
