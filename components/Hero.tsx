@@ -16,7 +16,7 @@ const Hero = () => {
           fill="white"
         />
         <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-[90%] "
+          className="h-[80vh] w-[50vw] top-10 left-full "
           fill="purple"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
@@ -34,11 +34,11 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </h2>
           <TextGenerateEffect
-            className="t text-center text-5xl md:w-[80%]  md:text-5xl lg:6xl"
+            className="t text-center text-5xl w-full md:w-[80%] md:text-5xl lg:6xl"
             words="Transforming Concepts into Seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 md:text-lg lg:text-1xl">
-            Hi! I’m Abdullah, a Next.js Developer based in Croatia.{" "}
+            Hi! I’m Abdullah, a Next.js Developer based in Yemen.{" "}
           </p>
           <a href="#about">
             <MagicButton
